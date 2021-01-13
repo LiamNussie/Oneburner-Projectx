@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 360px;
+    margin: 10px auto;
+    color: #333333;
+}
+input[type=email],
+input[type=text] {
+    width: 100%;
+    margin: 10px 0;
+    height: 30px;
+    padding: 20px;
+    border: 2px solid rgba(51, 51, 51, 0.8);
+    border-radius: 5px;
+}
+
+
+.container button {
+    padding: 12px 30px;
+    background-color: #462686;
+    color: #FFF;
+    border: none;
+    width: 100%;
+    margin: 25px 0;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+.container button:hover {
+    color: #462686;
+    background-color: #FFF;
+    border: 2px solid #462686;
+}
+.text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.para {
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+.forget {
+    color: #462686;
+    font-weight: 500;
+    cursor: pointer;
+}
+.links {
+    display: flex;
+}
+.outlook {
+    width: 5%;
+    height: 26px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.outlook:hover {
+    transform: scale(1.1);
+}
+.links a {
+    width: 5%;
+    height: 26px;
+}
+.customer {
+    margin-right: 5px;
+}
+.top {
+    margin-top: -10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #01001D;
+}
+
+@media screen and (min-width: 680px) {
+    .container {
+        max-width: 450px;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .header img {
+        width: 28%;
+    }
+}

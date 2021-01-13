@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hamburger menu  */
+
+#menu {
+    display: none;
+    cursor: pointer;
+    padding-top: 7px;
+    margin-top: 32px;
+  }
+  
+  #menu p {
+    border-radius: 50px;
+  }
+  #bar1 {
+    border-top: 5px solid #462686;
+    width: 25px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  #bar2 {
+    border-top: 5px solid rgb(153, 153, 153);
+    width: 35px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  #bar3 {
+    border-top: 5px solid #462686;
+    width: 25px;
+    margin-left: 15px;
+  }
+  #bar1,
+  #bar2,
+  #bar3 {
+    transition: 0.3s ease;
+  }
+  #bar2,
+  #bar3 {
+    margin-top: -10px;
+  }
+  
+  .change #bar1 {
+    transform: translate(1px,9px) rotateZ(-45deg);
+    width: 30px;
+  }
+  .change #bar2 {
+    transform: translateX(70px);
+  }
+  .change #bar3 {
+    transform: translate(1px,-11px) rotate(45deg);
+    width: 30px;
+  } 
+
+
+
+#navmenu {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: #462686;
+    position: fixed;
+    text-align: center;
+    z-index: 5;
+}
+
+
+.nav-linksx li {
+    font-size: 25px;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.showNav {
+    display: block;
+  }
+  
+  .hideNav {
+    display: none;
+  }
+
+
+
+.Navbar {
+    background-color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 25px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 47px;
+}
+
+img {
+    transform: scale(0.8);
+    cursor: pointer;
+}
+.name-logo {
+    display: flex;
+    
+}
+.left-links {
+    margin-top: 43px;
+}
+li {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 10px;
+    color: #454545;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+#try {
+    color: white !important;
+    background-color: #462686;
+    height: fit-content;
+    border-radius: 20px;
+    font-size: 13px !important;
+    padding: 10px 22px 12px 22px;
+    margin-top: -8px;
+
+}
+
+
+@keyframes slide {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100vh;
+    }
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 960px) {
+    .nav-links li,
+    .left-links li {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    
+}

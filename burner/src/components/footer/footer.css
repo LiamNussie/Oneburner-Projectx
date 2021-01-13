@@ -1,0 +1,128 @@
+/* footer Area */
+
+.dark-grid {
+    display: grid; 
+    background-color: #FFF;
+    padding: 2rem 4rem;
+    grid-template-columns: 40% 15% 15% 15% 15%;
+    grid-template-areas: 
+    "logo-text market company support subscribe"
+}
+.logo-text{
+    grid-area: logo-text;
+} 
+.company {
+    grid-area: company;
+}
+.support {
+    grid-area: support;
+}
+.subscribe {
+    grid-area: subscribe;
+}
+.list-head {
+    margin-bottom: 15px;
+    font-size: 11px;
+}
+.alink a {
+    text-decoration: none;
+}
+.list-head ul li {
+    color: rgba(1, 0, 29, 0.6);
+    font-size: 13px;
+}
+hr {
+    padding: 20px;
+}
+.line {
+    border: 1px solid rgba(69, 69, 69, 0.13);
+}
+.same-text1 {
+    color: #454545;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.same-text2 {
+    color: rgba(1, 0, 29, 0.6);
+}
+.same-text3 {
+    color: rgba(1, 0, 29, 0.6);
+    margin-bottom: 8px;
+}
+.same-text4 {
+    color: #333333;
+    margin-bottom: 14px;
+}
+.blue {
+    margin-bottom: 50px;
+    color: rgba(1, 0, 29, 0.6);
+}
+.outlook {
+    width: 5%;
+    height: 26px;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+#sort {
+    border: 2px solid #462686;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.list-header {
+    padding: 20px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 500px) {
+    .head img {
+        width: 60%;
+    }
+    #sort select {
+        padding: 0 13px;
+    }
+    #sort {
+        margin-top: 15px;
+    }
+    .dark-grid {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'logo-text'
+        'market' 
+        'company '
+        'support' 
+        "subscribe"
+    }
+    .main-form {
+        padding: 35px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .head img {
+        width: 60%;
+    }
+    #sort select {
+        padding: 0 13px;
+    }
+    #sort {
+        margin-top: 15px;
+    }
+    .dark-grid {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'logo-text'
+        'market' 
+        'company '
+        'support' 
+        "subscribe"
+    }
+    .main-form {
+        padding: 35px;
+    }
+}

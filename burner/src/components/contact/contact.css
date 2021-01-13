@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.grid {
+    display: flex; 
+    flex-wrap: wrap;
+    background: #faf9f9;
+    
+}
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-auto-flow: row;
+    }
+}
+body {
+    color: #333333;
+}
+.main-form {
+    flex: 1 1 400px;
+    background-color: #FFF !important;
+    height: auto;
+    margin: 50px 50px;
+    padding: 70px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+}
+.asidely {
+    flex: 1 1 400px;
+    padding: 50px 50px;
+    margin-top: 50px;
+}
+.grid-layout {
+    display: grid; 
+    margin-bottom: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "make take"
+}
+.make{
+    grid-area: make;
+    margin-right: 10px;
+    
+}
+.take {
+    grid-area: take;
+    margin-left: 10px;
+}
+.gridy {
+    display: grid; 
+    margin-bottom: 20px;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "mainy asidey"
+}
+
+.mainy{
+    grid-area: mainy;
+    margin-right: 80px;
+    
+}
+.asidey {
+    grid-area: asidey;
+    margin-left: 10px;
+}
+.container button {
+    padding: 12px 30px;
+    background-color: #462686;
+    color: #FFF;
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+select {
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+    padding: 20px;
+    border: 2px solid rgba(51, 51, 51, 0.8);
+    border-radius: 5px;
+}
+.fname {
+    margin: auto;
+}
+.email {
+    margin-bottom: 20px;
+}
+.number {
+    margin-bottom: 20px;
+}
+.interest {
+    margin-bottom: 20px;
+}
+input[type=password] {
+    width: 100%;
+    margin-top: 10px;
+    height: 120px;
+    padding: 20px;
+    border: 2px solid rgba(51, 51, 51, 0.8);
+    border-radius: 5px;
+}
+
+.same {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+}
+.add-side {
+    padding: 50px;
+}
+.list-head {
+    margin-bottom: 20px;
+    color: #455A64;
+    font-weight: bold;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.lice {
+    list-style: none;
+    color: rgba(1, 0, 29, 0.6);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 13px;
+}
+.grid-form {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "beal feal meal"
+}
+
+.beal{
+    grid-area: beal;
+    
+}
+.feal {
+    grid-area: feal;
+}
+.meal {
+    grid-area: meal;
+}
+.form form{
+    background-color: #FFF !important;
+}
+.header {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .head img {
+        width: 60%;
+    }
+    #sort select {
+        padding: 0 13px;
+    }
+    #sort {
+        margin-top: 15px;
+    }
+   
+    .main-form {
+        padding: 35px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .head img {
+        width: 60%;
+    }
+    #sort select {
+        padding: 0 13px;
+    }
+    #sort {
+        margin-top: 15px;
+    }
+    
+    .main-form {
+        padding: 35px;
+    }
+}
